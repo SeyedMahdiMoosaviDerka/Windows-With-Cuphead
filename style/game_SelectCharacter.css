@@ -1,0 +1,189 @@
+#SelectCharacter {
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 700;
+}
+
+.hideSelector {
+  opacity: 0;
+  top: -1000px;
+}
+.showSelector {
+  opacity: 1;
+  top: 0px;
+}
+#select {
+  background: #d8c9b7;
+  width: 600px;
+  height: 450px;
+  margin: auto;
+  position: relative;
+  border-radius: 12px;
+
+  position: absolute;
+  top: 100px;
+  left: 450px;
+  z-index: 700;
+  /* box-shadow: 0px 0px 200px 1px #b25759; */
+
+  animation: animselect 4s infinite linear;
+}
+
+@keyframes animselect {
+  0% {
+    box-shadow: 0px 0px 200px 1px #b2575984;
+    scale: 0.99;
+    transform: rotate(0deg);
+
+    color: #b25759;
+  }
+  25% {
+    box-shadow: 0px 0px 200px 1px #b25759;
+    scale: 1;
+    transform: rotate(0.5deg);
+
+    color: white;
+  }
+  50% {
+    box-shadow: 0px 0px 200px 1px #b2575988;
+    scale: 0.99;
+    transform: rotate(0deg);
+
+    color: green;
+  }
+  75% {
+    box-shadow: 0px 0px 200px 1px #b25759;
+    scale: 1;
+    transform: rotate(-0.5deg);
+
+    color: yellow;
+  }
+  100% {
+    box-shadow: 0px 0px 200px 1px #b2575988;
+    scale: 0.99;
+    transform: rotate(0deg);
+
+    color: #b25759;
+  }
+}
+
+@keyframes animselectcolor {
+  0% {
+    color: #b25759;
+    font-size: 1rem;
+  }
+  50% {
+    color: purple;
+    font-size: 1.05rem;
+  }
+  100% {
+    color: #b25759;
+    font-size: 1rem;
+  }
+}
+#select > .title {
+  /* border: 1px solid red; */
+  padding-top: 20px;
+  color: #b25759;
+
+  cursor: default;
+
+  text-indent: 140px;
+  line-height: 100px;
+
+  animation: animselectcolor 1s infinite linear;
+}
+
+.vs {
+  position: absolute;
+  top: 230px;
+  left: 240px;
+
+  animation: none;
+  color: red;
+  font-size: 24px;
+  cursor: default;
+
+  animation: blue_red 5s infinite linear;
+}
+
+@keyframes blue_red {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.blue {
+  transition: 0.5s;
+  /* border: 1px solid red; */
+  width: 240px;
+  height: 130px;
+  position: absolute;
+  right: 30px;
+  top: 200px;
+
+  scale: 1;
+
+  cursor: pointer;
+
+  animation: cuphead2_left 0.8s infinite linear;
+}
+.blue:hover {
+  scale: 1.3;
+  rotate: -5deg;
+}
+
+.red:hover {
+  scale: 1.4;
+  transform: rotate(5deg);
+}
+.red {
+  transition: 0.5s;
+  /* border: 1px solid red; */
+  /* border-radius: 50%; */
+  width: 200px;
+  height: 110px;
+  position: absolute;
+  left: 40px;
+  top: 220px;
+
+  scale: 1;
+
+  cursor: pointer;
+
+  animation: cuphead1_right 0.8s infinite linear;
+}
+
+#selectorPlayer:hover {
+  opacity: 1;
+}
+#selectorPlayer {
+  transition: 0.5s;
+  position: absolute;
+  /* top: 10px; */
+  right: 25px;
+  top: 60px;
+  border-radius: 5px;
+
+  z-index: 900;
+  width: 140px;
+  height: 30px;
+
+  opacity: 0.7;
+
+  background-color: red;
+  cursor: pointer;
+
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}

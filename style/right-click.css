@@ -1,0 +1,193 @@
+ul {
+  transition: 0.1s;
+  /* border: 1px solid red; */
+  background-color: rgb(238, 232, 232);
+
+  height: 400px;
+  width: 250px;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  line-height: 40px;
+  color: #333;
+
+  border-radius: 10px;
+  /* box-shadow:  0px 0px 10px 1px #000000; */
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+ul > li:hover {
+  background-color: rgba(204, 193, 193, 0.456);
+}
+
+ul > li {
+  transition: 0.5s;
+  /* border: 1px solid red; */
+
+  background-color: rgba(238, 232, 232);
+
+  border-radius: 5px;
+  /* box-shadow:  0px 0px 10px 1px #ccc; */
+  margin-bottom: 3px;
+
+  height: 30px;
+  width: 240px;
+
+  margin: auto;
+  margin-top: 5px;
+
+  cursor: pointer;
+
+  position: relative;
+
+  text-indent: -130px;
+  line-height: 28px;
+}
+
+ul > .it1 {
+  background: url(../img/Right-click/View.png) no-repeat,
+    url(../img/Right-click/Path\ 1.png) no-repeat;
+  background-position: 10px 5px, 200px 0px;
+  background-size: 20px 20px, 30px 30px;
+}
+
+ul > .it1-it2 {
+  text-indent: -115px;
+}
+ul > .it1-it3 {
+  text-indent: -135px;
+}
+
+ul > .it2 {
+  background: url(../img/Right-click/Sort\ by.png) no-repeat,
+    url(../img/Right-click/Path\ 1.png) no-repeat;
+  background-position: 10px 5px, 200px 0px;
+  background-size: 20px 20px, 30px 30px;
+  text-indent: -115px;
+}
+
+ul > .it2-it1 {
+  text-indent: -60px;
+}
+ul > .it2-it2 {
+  text-indent: -80px;
+}
+ul > .it2-it3 {
+  text-indent: -40px;
+}
+ul > .it2-it4 {
+  text-indent: -10px;
+}
+
+ul > .it3 {
+  background: url(../img/Right-click/Refresh.png) no-repeat;
+  background-position: 10px 5px;
+  background-size: 20px 20px;
+  text-indent: -110px;
+}
+
+ul > .it4 {
+  margin-top: 15px;
+  text-indent: 0px;
+  font-size: 14px;
+}
+
+ul > .it5 {
+  background: url(../img/Right-click/undo.png) no-repeat;
+  background-position: 10px 5px;
+  background-size: 20px 20px;
+  text-indent: -85px;
+}
+
+ul > .it6 {
+  background: url(../img/Right-click/new.png) no-repeat;
+  background-position: 10px 2px;
+  background-size: 25px 25px;
+  text-indent: -135px;
+}
+
+ul > .it7 {
+  margin-top: 15px;
+
+  background: url(../img/Right-click/display\ setting.png) no-repeat;
+  background-position: 10px 5px;
+  background-size: 20px 20px;
+  text-indent: -65px;
+}
+
+ul > .it8 {
+  background: url(../img/Right-click/personalize.png) no-repeat;
+  background-position: 10px 5px;
+  background-size: 20px 20px;
+  text-indent: -90px;
+}
+
+ul > .it9 {
+  margin-top: 15px;
+
+  background: url(../img/Right-click//Terminal.png) no-repeat;
+  background-position: 5px 3px;
+  background-size: 20px 20px;
+  text-indent: -60px;
+}
+
+ul > .it10 {
+  margin-top: 15px;
+
+  background: url(../img/Right-click//show\ more.png) no-repeat;
+  background-position: 5px 3px;
+  background-size: 20px 20px;
+  text-indent: -50px;
+}
+
+li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  height: 120px;
+}
+
+li > ul {
+  height: 0px;
+  width: 200px;
+
+  transition: 0.5s;
+
+  position: absolute;
+  left: 250px;
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.it1 > ul {
+  width: 200px;
+}
+
+.it2:hover > ul {
+  height: 160px;
+}
+
+.it2 > ul {
+  width: 140px;
+}
+.it2 > ul > li {
+  width: 100%;
+  /* border: 1px solid red; */
+}

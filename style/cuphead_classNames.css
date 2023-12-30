@@ -1,0 +1,8 @@
+.hide_totu {
+  top: -2000px;
+  opacity: 0;
+}
+.show_totu {
+  top: 0px;
+  opacity: 1;
+}

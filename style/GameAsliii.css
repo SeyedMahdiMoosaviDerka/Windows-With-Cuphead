@@ -1,0 +1,330 @@
+#GameAsliii {
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  position: absolute;
+  top: 0;
+  z-index: 500;
+
+  background: url(../CupHeadApp/cuphead_img/OrginalGame/game\ map_okey.png)
+    no-repeat;
+  /*  background: url(../CupHeadApp/cuphead_img/OrginalGame/gameBack_okay.png)
+    no-repeat; */
+  background-size: 100%;
+
+  /* animation: BoomShaking 0.01s reverse infinite; */
+}
+
+@keyframes BoomShaking {
+  0% {
+    transform: rotate(2deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-2deg);
+    opacity: 0.9;
+  }
+}
+
+#cup1_game {
+  width: 180px;
+  height: 140px;
+
+  transform: scale(1.5);
+
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 360px;
+  left: 400px;
+  display: none;
+}
+
+#cup2_game {
+  width: 180px;
+  height: 140px;
+
+  transform: scale(1.5);
+
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 360px;
+  left: 400px;
+}
+
+/* Red anim ClassNames */
+#cup1_game.waitRightRed {
+  animation: cuphead1_right 0.5s infinite linear;
+}
+#cup1_game.waitLeftRed {
+  animation: cuphead1_left 0.5s infinite linear;
+}
+#cup1_game.walkingRightRed {
+  animation: walkingRight 1s infinite linear;
+}
+#cup1_game.walkingLeftRed {
+  animation: walkingLeft 1s infinite linear;
+}
+#cup1_game.jumpingRightRed {
+  animation: jumpRight 1.5s linear;
+}
+#cup1_game.jumpingLeftRed {
+  animation: jumpLeft 1.5s linear;
+}
+#cup1_game.downRedRight {
+  animation: downRedRight 1.5s linear;
+}
+#cup1_game.downRedLeft {
+  animation: downRedLeft 1.5s linear;
+}
+#cup1_game.dashRightRed {
+  animation: dashRightRed 0.2s linear;
+}
+#cup1_game.dashLeftRed {
+  animation: dashLeftRed 0.2s linear;
+}
+#cup1_game.Boom {
+  animation: boom 0.5s linear;
+}
+
+/* Blue anim ClassNames */
+#cup2_game.waitRightBlue {
+  animation: cuphead2_right 0.5s infinite linear;
+}
+#cup2_game.waitLeftBlue {
+  animation: cuphead2_left 0.5s infinite linear;
+}
+#cup2_game.walkingRightBlue {
+  animation: walkingRightBlue 1s infinite linear;
+}
+#cup2_game.walkingLeftBlue {
+  animation: walkingLeftBlue 1s infinite linear;
+}
+#cup2_game.jumpingRightBlue {
+  animation: jumpRightBlue 1s linear;
+}
+#cup2_game.jumpingLeftBlue {
+  animation: jumpLeftBlue 1s linear;
+}
+#cup2_game.downRightBlue {
+  animation: downRightBlue 1.5s linear;
+}
+#cup2_game.downLeftBlue {
+  animation: downLeftBlue 1.5s linear;
+}
+#cup2_game.dashRightBlue {
+  animation: dashRightBlue 0.2s linear;
+}
+#cup2_game.dashLeftBlue {
+  animation: dashLeftBlue 0.2s linear;
+}
+
+#cup2_game.Boom {
+  animation: boom 0.5s linear;
+}
+
+#Enter_game {
+  transition: 0.5s;
+  /* width: 100px; */
+  /* height: 40px; */
+
+  background: black;
+  border-radius: 10px;
+
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+
+  position: absolute;
+  /* right: 80px; */
+  /* bottom: 300px; */
+  cursor: pointer;
+
+  box-shadow: 0px 0px 100px 10px brown;
+
+  animation: Enter_game 1s linear infinite;
+}
+
+@keyframes Enter_game {
+  0% {
+    scale: 1;
+    rotate: 5deg;
+  }
+  25% {
+    scale: 1.1;
+    rotate: 0;
+  }
+  50% {
+    scale: 1;
+    rotate: -5deg;
+  }
+  75% {
+    scale: 1;
+    rotate: 0deg;
+  }
+  100% {
+    scale: 1;
+    rotate: 5deg;
+  }
+}
+
+.hideEnter {
+  opacity: 0;
+  bottom: 270px;
+  right: 120px;
+  height: 0;
+  width: 0;
+}
+.showEnter {
+  opacity: 0.8;
+  bottom: 300px;
+  right: 80px;
+  height: 40px;
+  width: 100px;
+}
+
+#HP {
+  width: 90px;
+  height: 50px;
+
+  background: url(../CupHeadApp/cuphead_img/OrginalGame/HP3.png) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+
+  position: absolute;
+  z-index: 700;
+  bottom: 50px;
+  left: 100px;
+  animation: Enter_game 1s linear infinite;
+  /* animation: HP_changer 1.5s linear; */
+
+  transform: scale(2);
+}
+
+@keyframes HP_changer {
+  0% {
+    transform: scale(1.5);
+    left: 200px;
+    bottom: 200px;
+  }
+  15% {
+    transform: scale(2);
+    left: 500px;
+    bottom: 400px;
+  }
+  50% {
+    transform: scale(4);
+    left: 700px;
+    bottom: 350px;
+  }
+  85% {
+    transform: scale(2);
+    left: 400px;
+    bottom: 400px;
+  }
+  100% {
+    transform: scale(1.5);
+    left: 200px;
+    bottom: 200px;
+  }
+}
+
+#nowgo {
+  position: absolute;
+  top: -2000px;
+}
+
+#GameAsliii > .Bullet {
+  width: 50px;
+  height: 15px;
+
+  position: absolute;
+  /* top: 500px; */
+  top: 500px;
+
+  /*   background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 0, 0, 0.8)
+  ); */
+  border-radius: 10px;
+
+  animation: BulletShining 0.2s linear infinite;
+}
+
+@keyframes BulletShining {
+  0% {
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 0, 0, 0.8)
+    );
+    box-shadow: 0 0 40px 1px red;
+
+    transform: rotate(0deg);
+  }
+  25% {
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 0, 0, 1)
+    );
+
+    transform: rotate(10deg);
+  }
+  75% {
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 0, 0, 1)
+    );
+
+    transform: rotate(-10deg);
+  }
+  100% {
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 0, 0, 0.8)
+    );
+
+    transform: rotate(0deg);
+  }
+}
+
+#score {
+  width: 300px;
+  height: 100px;
+
+  background-color: black;
+  border-radius: 50px;
+
+  animation: score 1s infinite linear;
+
+  color: white;
+  font-size: 34px;
+
+  text-align: center;
+  line-height: 100px;
+
+  position: absolute;
+  top: 10px;
+  left: 650px;
+}
+
+@keyframes score {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}

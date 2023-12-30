@@ -1,0 +1,393 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style/first-style.css" />
+    <link rel="stylesheet" href="style/right-click.css" />
+
+    <!-- thesse for cuphead game styles -->
+
+    <link rel="stylesheet" href="style/cuphead.css" />
+    <link rel="stylesheet" href="style/cuphead_classNames.css" />
+    <link rel="stylesheet" href="style/cuphead_menu.css" />
+    <link rel="stylesheet" href="style/cuphead_menu_start.css" />
+    <link rel="stylesheet" href="style/cuphead_menu_option.css" />
+    <link rel="stylesheet" href="style/cuphead_menu_option_volume.css" />
+    <link rel="stylesheet" href="style/cuphead_menu_option_display.css" />
+    <link rel="stylesheet" href="style/game_new_save.css" />
+    <link rel="stylesheet" href="style/game_totu.css" />
+    <!-- with exit_2 bottom -->
+    <link rel="stylesheet" href="style/game_SelectCharacter.css" />
+    <link rel="stylesheet" href="style/GameAsliii.css" />
+    <link rel="stylesheet" href="style/GameAsliii_Enemy.css" />
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <video src="CupHeadApp/video/nowgo.mp4" id="nowgo"></video>
+
+    <div id="holder">
+      <div id="cupheadIcon" class="medium">
+        <div id="backgroundHover" class="">
+          <img src="CupHeadApp/cuphead_img/cuphead.PNG" alt="" />CupHead
+        </div>
+      </div>
+
+      <div id="wallpaper" class="LightWallpaper">
+        <div id="game" class="hide">
+          <div id="gameMenu">
+            <video
+              src="CupHeadApp/video/Intro/intro video.mp4"
+              id="StratVideo"
+            ></video>
+            <video
+              src="CupHeadApp/video/Intro/PressBottomVideo.mp4"
+              id="PressBottomVideo"
+            ></video>
+            <video
+              src="CupHeadApp/video/Intro/PressbottomAction.mp4"
+              id="PressBottomAction"
+            ></video>
+            <video
+              src="CupHeadApp/video/Intro/MenuBackground.mp4"
+              id="MenuBackground"
+            ></video>
+            <audio
+              src="CupHeadApp/audio/intro&menuAudio.m4a"
+              id="StartMenuAudio"
+            ></audio>
+            <audio
+              src="CupHeadApp/audio/PressBottomActionAudio.m4a"
+              id="PressBottomActionAudio"
+            ></audio>
+            <!-- <div class="cover" id="cover_1"></div> -->
+            <div class="menucover" id="cover_menu">
+              <div class="items" id="StartBottom"></div>
+              <div class="items" id="OptionsBottom"></div>
+              <div class="items" id="ExitBottom"></div>
+              <div id="StartBottomClicked">
+                <div id="save_1" class="items"></div>
+                <div id="save_2" class="items"></div>
+                <div id="save_3" class="items"></div>
+              </div>
+              <div id="OptionsBottomClicked">
+                <div id="AudioBottom" class="items">
+                  <div id="AudioBottomClicked">
+                    <div class="items" id="menu_option_redio_1">
+                      <div id="volume_border_1"></div>
+                      -------
+                    </div>
+                    <div class="items" id="menu_option_redio_2">
+                      <div id="volume_border_2"></div>
+                      -------
+                    </div>
+                    <div class="items" id="menu_option_redio_3">
+                      <div id="volume_border_3"></div>
+                      -------
+                    </div>
+                  </div>
+                </div>
+                <div id="VisualBottom" class="items">
+                  <div id="VisualBottomClicked">
+                    <div class="items" id="menu_option_redio_1">
+                      <div id="volume_border_1"></div>
+                      -------
+                    </div>
+                    <div class="items" id="menu_option_redio_2">
+                      <div id="volume_border_2"></div>
+                      -------
+                    </div>
+                    <div class="items" id="menu_option_redio_3">
+                      <div id="volume_border_3"></div>
+                      -------
+                    </div>
+                  </div>
+                </div>
+                <div id="ControlsBottom" class="items"></div>
+                <div id="SorryAlert">Sorry! You Can't Change details</div>
+              </div>
+            </div>
+          </div>
+          <!-- <div id="ExitGame" class="hide">EXIT</div> -->
+          <div id="BackInGame" class="hide">Back</div>
+        </div>
+
+        <div id="game_new_save" class="hide">
+          <audio
+            src="CupHeadApp/audio/book sound.m4a"
+            id="game_new_save_audio"
+          ></audio>
+          <audio
+            src="CupHeadApp/audio/HaHaHa.mp3"
+            id="game_new_save_HaHa"
+          ></audio>
+          <video
+            src="CupHeadApp/intro_new_save_films/open_book.mp4"
+            id="open_book"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film1.mp4"
+            id="film1"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film1_action.mp4"
+            id="film1_action"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film2.mp4"
+            id="film2"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film2_action.mp4"
+            id="film2_action"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film3.mp4"
+            id="film3"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film3_action.mp4"
+            id="film3_action"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film4.mp4"
+            id="film4"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film4_action.mp4"
+            id="film4_action"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film5.mp4"
+            id="film5"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film5_action.mp4"
+            id="film5_action"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film6.mp4"
+            id="film6"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film6_action.mp4"
+            id="film6_action"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film7.mp4"
+            id="film7"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film7_action.mp4"
+            id="film7_action"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film8.mp4"
+            id="film8"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film8_action.mp4"
+            id="film8_action"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film9.mp4"
+            id="film9"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film9_action.mp4"
+            id="film9_action"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film10.mp4"
+            id="film10"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film10_action.mp4"
+            id="film10_action"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film11.mp4"
+            id="film11"
+          ></video>
+          <video
+            src="CupHeadApp/intro_new_save_films/film11_action.mp4"
+            id="film11_action"
+          ></video>
+
+          <video
+            src="CupHeadApp/intro_new_save_films/loading_more.mp4"
+            id="loading_more"
+          ></video>
+
+          <div id="Skip">Skip</div>
+          <div id="Exit_1">Exit</div>
+        </div>
+
+        <div id="totu" class="hide_totu">
+          <audio src="CupHeadApp/audio/jumpsound.mp3" id="jumpsound"></audio>
+          <div id="background">
+            <div class="game">
+              <div class="tuto">THE TUTORIAL</div>
+              <div class="duck">
+                <div class="Du">DUCK</div>
+                <div class="hold">HOLD DOWN TO CROUCH</div>
+                <div class="arrow"></div>
+                <div class="road">-- - -- -- -- - - - -- - - - - -- -- -</div>
+              </div>
+              <div class="JUMP">
+                <div class="cube"></div>
+                <div class="arrow"></div>
+                <div class="log"></div>
+                <div class="logName">spase</div>
+                <div class="plus">+</div>
+                <div class="shift">SHIFT</div>
+                <div class="Ju">JUMP</div>
+                <div class="tap">TAP SPASE AND SHIFT FOR JUMP</div>
+              </div>
+              <div class="waitRightRed" id="cup1"></div>
+              <div class="waitRightBlue" id="cup2"></div>
+            </div>
+          </div>
+
+          <div id="tutorialDone" class="hideSelector">
+            <p>WELLDONE!</p>
+            <p>You'r toturial has been completed succsessfully</p>
+            <p>Now you can defeat the last giant of the game</p>
+            <div id="LetsGoTutorial">Let's Go!</div>
+          </div>
+        </div>
+
+        <div id="GameAsliii" class="hide">
+          <div id="cup1_game" class="waitRightRed"></div>
+          <div id="cup2_game" class="waitRightBlue"></div>
+          <div id="Enter_game" class="hideEnter">Enter</div>
+          <audio src="CupHeadApp/audio/boomsound.mp3" id="BoomSound"></audio>
+          <div id="HP" class="Show"></div>
+
+          <div class="Bullet"></div>
+          <div id="score"></div>
+        </div>
+
+        <div id="selectorPlayer" class="hide">Select Player</div>
+
+        <div id="SelectCharacter" class="hideSelector">
+          <div id="select">
+            <div class="title">
+              <h2>PLEASE SELECT PLAYER</h2>
+            </div>
+            <div class="blue" id="BlueCharacter"></div>
+            <div class="vs">
+              <h2>1 & 2</h2>
+            </div>
+            <div class="red" id="RedCharacter"></div>
+          </div>
+        </div>
+
+        <div id="Exit_2" class="hide">Exit</div>
+      </div>
+
+      <div id="toolbar">
+        <div id="windows_key" class="items">
+          <img src="img/toolbar/windows-key.png" alt="windows-key" />
+          <div id="menu" class="HideWindowsMenu">
+            <input
+              type="text"
+              placeholder="search for apps, settings, and documents"
+            />
+            <div class="pinned">
+              <div class="top">
+                <div class="right">All apps</div>
+                <div class="left">pinned</div>
+
+                There is noting her!
+              </div>
+              <div class="but"></div>
+            </div>
+            <div class="recommended">
+              <div class="top">
+                <div class="right">More</div>
+                <div class="left">Recommended</div>
+
+                There is noting her!
+              </div>
+            </div>
+            <div class="shut">
+              <div>
+                <div class="account"></div>
+                <div class="accountName">mahdi</div>
+              </div>
+              <div class="shut"></div>
+            </div>
+          </div>
+        </div>
+        <div id="search" class="items">
+          <input placeholder="search" />
+        </div>
+        <div id="chat" class="items">
+          <img src="img/toolbar/chat.png" alt="chat" />
+        </div>
+      </div>
+
+      <ul id="WindowsRightClick" class="hide">
+        <li class="it1">
+          View
+
+          <ul>
+            <li id="largeIcon" class="it1-it1">large icon</li>
+            <li id="mediumIcon" class="it1-it2">medium icon</li>
+            <li id="smallIcon" class="it1-it3">small icon</li>
+          </ul>
+        </li>
+        <li class="it2">
+          Sort by
+
+          <ul>
+            <li class="it2-it1">Name</li>
+            <li class="it2-it2">Size</li>
+            <li class="it2-it3">Item type</li>
+            <li class="it2-it4">Date modified</li>
+          </ul>
+        </li>
+        <li class="it3">Refresh</li>
+        <li class="it4" id="next">Next Desktop Background</li>
+        <li class="it5">Undo Move</li>
+        <li class="it6">New</li>
+        <li class="it7">Display setting</li>
+        <li class="it8">Personalize</li>
+        <li class="it9">Open in terminal</li>
+        <li class="it10">Show more option</li>
+      </ul>
+    </div>
+  </body>
+
+  <script>
+    /*  chat.onclick = function () {
+    StartMenuAudio.play();
+  };
+  search.onclick = function () {
+    StartMenuAudio.pause();
+  }; */
+
+    /* function RightClick(element) {
+    element.oncontextmenu = function (e) {
+      alert(e.pageY + "," + e.pageX);
+      return false;
+    };
+  }
+
+  RightClick(wallpaper); */
+  </script>
+  <script src="js/WindowsJS.js"></script>
+
+  <!-- these for cuphead game js -->
+  <script src="js/StartUpCuphead.js"></script>
+  <script src="js/game_new_save.js"></script>
+  <script src="js/game_totu.js"></script>
+  <script src="js/game_Asliii.js"></script>
+  <script src="js/game_Asliii_Enemy.js"></script>
+</html>

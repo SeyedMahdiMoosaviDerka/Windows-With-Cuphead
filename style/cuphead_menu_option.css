@@ -1,0 +1,115 @@
+#game > #gameMenu > #cover_menu > #OptionsBottomClicked {
+  width: 500px;
+  height: 300px;
+
+  position: absolute;
+  top: -30px;
+  left: -200px;
+
+  background: url(../CupHeadApp/cuphead_img/Menu_Option/OptionMenu.png)
+    no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+#game > #gameMenu > #cover_menu > #OptionsBottomClicked > .items {
+  /*   border: 1px solid red; */
+
+  position: absolute;
+  cursor: pointer;
+}
+
+#game > #gameMenu > #cover_menu > #OptionsBottomClicked > #AudioBottom:hover {
+  background: url(../CupHeadApp/cuphead_img/Menu_Option/AudioSelected.png);
+  background-size: 100% 100%;
+}
+#game > #gameMenu > #cover_menu > #OptionsBottomClicked > #AudioBottom {
+  top: 58px;
+  left: 195px;
+  width: 113px;
+  height: 28px;
+}
+
+#game > #gameMenu > #cover_menu > #OptionsBottomClicked > #VisualBottom:hover {
+  background: url(../CupHeadApp/cuphead_img/Menu_Option/VisualSelected.png);
+  background-size: 100% 100%;
+}
+#game > #gameMenu > #cover_menu > #OptionsBottomClicked > #VisualBottom {
+  top: 98px;
+  left: 193px;
+  width: 117px;
+  height: 28px;
+}
+
+#game
+  > #gameMenu
+  > #cover_menu
+  > #OptionsBottomClicked
+  > #ControlsBottom:hover {
+  background: url(../CupHeadApp/cuphead_img/Menu_Option/ControlsSelected.png);
+  background-size: 100% 100%;
+}
+#game > #gameMenu > #cover_menu > #OptionsBottomClicked > #ControlsBottom {
+  top: 138px;
+  left: 160px;
+  width: 183px;
+  height: 28px;
+}
+
+#game
+  > #gameMenu
+  > #cover_menu
+  > #OptionsBottomClicked
+  > #AudioBottom
+  > #AudioBottomClicked {
+  width: 510px;
+  height: 500px;
+
+  position: absolute;
+  z-index: 100;
+  top: -150px;
+  left: -200px;
+
+  /* border: 1px solid red; */
+  background: url(../CupHeadApp/cuphead_img/Menu_Option/Audiomenu.png) no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+#game
+  > #gameMenu
+  > #cover_menu
+  > #OptionsBottomClicked
+  > #VisualBottom
+  > #VisualBottomClicked {
+  width: 510px;
+  height: 500px;
+
+  position: absolute;
+  z-index: 100;
+  top: -200px;
+  left: -200px;
+
+  /* border: 1px solid red; */
+  background: url(../CupHeadApp/cuphead_img/Menu_Option/VisualMenu.png)
+    no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+#game > #gameMenu > #cover_menu > #OptionsBottomClicked > #SorryAlert {
+  width: 300px;
+  height: 40px;
+
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.772);
+  box-shadow: 0 0 100px 1px white;
+  color: red;
+  text-align: center;
+  line-height: 40px;
+
+  position: absolute;
+  top: -160px;
+  left: 100px;
+
+  display: none;
+}

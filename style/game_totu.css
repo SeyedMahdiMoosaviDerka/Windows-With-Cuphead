@@ -1,0 +1,2057 @@
+#totu {
+  transition: 2s;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  z-index: 500;
+  background-color: black;
+
+  /*  cursor: none; */
+}
+
+#background {
+  border: 1px solid red;
+  background: wheat;
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  height: 150%;
+  margin: auto;
+  /* overflow: hidden; */
+}
+
+#background > .game {
+  border: 1px solid green;
+  width: 150%;
+  height: 100%;
+  background: wheat;
+  position: relative;
+}
+
+#background > .game > .tuto {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  font-size: 35px;
+  color: #636363;
+}
+
+#background > .game > .duck > .Du {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 290px;
+  left: 630px;
+  color: #636363;
+  font-size: 25px;
+}
+
+#background > .game > .duck > .hold {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 320px;
+  left: 520px;
+  font-size: 25px;
+  color: #636363;
+}
+
+#background > .game > .duck > .arrow {
+  /* border: 1px solid red; */
+  width: 40px;
+  height: 100px;
+  position: absolute;
+  top: 370px;
+  left: 640px;
+  background: url(../CupHeadApp/img_totu/img/icons8-down-arrow-100.png)
+    no-repeat;
+  background-size: 80px;
+  background-position: -20px 15px;
+}
+
+#background > .game > .duck > .road {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 480px;
+  left: 530px;
+  font-size: 25px;
+  color: #636363;
+}
+
+#background > .game > .JUMP > .cube {
+  /* border: 1px solid red; */
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 430px;
+  left: 1400px;
+  background: url(../CupHeadApp/img_totu/img/icons8-orthogonal-view-100.png)
+    no-repeat;
+  background-size: 150px;
+}
+
+#background > .game > .JUMP > .arrow {
+  /* border: 1px solid red; */
+  width: 70px;
+  height: 100px;
+  position: absolute;
+  top: 290px;
+  left: 1270px;
+  transform: rotate(5deg);
+  background: url(../CupHeadApp/img_totu/img/icons8-arrow-100.png) no-repeat;
+  background-size: 70px;
+  background-position-y: 15px;
+}
+
+#background > .game > .JUMP > .log {
+  /* border: 1px solid red; */
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  top: 390px;
+  left: 1180px;
+  background: url(../CupHeadApp/img_totu/img/icons8-space-key-50.png) no-repeat;
+  background-size: 60px;
+  background-position-y: -10px;
+}
+
+#background > .game > .JUMP > .logName {
+  position: absolute;
+  top: 398px;
+  left: 1193px;
+  color: white;
+}
+
+#background > .game > .JUMP > .plus {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 398px;
+  left: 1253px;
+  color: #636363;
+  font-size: 20px;
+}
+
+#background > .game > .JUMP > .shift {
+  position: absolute;
+  top: 400px;
+  left: 1283px;
+  color: #636363;
+  font-size: 25px;
+}
+
+#background > .game > .JUMP > .Ju {
+  position: absolute;
+  top: 440px;
+  left: 1223px;
+  color: #636363;
+  font-size: 25px;
+}
+
+#background > .game > .JUMP > .tap {
+  position: absolute;
+  top: 480px;
+  left: 1110px;
+  color: #636363;
+  font-size: 18px;
+}
+
+#background > .game > #cup1 {
+  /* transition: 0.1s; */
+  /* border: 1px solid red; */
+  width: 170px;
+  height: 130px;
+  /* background: url(waiting/01.png) no-repeat; */
+
+  background-size: 100% 100%;
+
+  transform: scale(1.5);
+
+  top: 440px;
+  /* left: 170px; */
+  position: absolute;
+
+  display: none;
+}
+
+#background > .game > #cup2 {
+  /* transition: 0.1s; */
+  /* border: 1px solid red; */
+  width: 190px;
+  height: 150px;
+  /* background: url(waiting/01.png) no-repeat; */
+
+  background-size: 100% 100%;
+
+  transform: scale(1.5);
+
+  top: 440px;
+  /* left: 170px; */
+  position: absolute;
+
+  display: none;
+}
+
+/* Red anim ClassNames */
+#cup1.waitRightRed {
+  animation: cuphead1_right 0.5s infinite linear;
+}
+
+#cup1.waitLeftRed {
+  animation: cuphead1_left 0.5s infinite linear;
+}
+
+#cup1.walkingRightRed {
+  animation: walkingRight 1s infinite linear;
+}
+
+#cup1.walkingLeftRed {
+  animation: walkingLeft 1s infinite linear;
+}
+
+#cup1.jumpingRightRed {
+  animation: jumpRight 1.5s linear;
+}
+
+#cup1.jumpingLeftRed {
+  animation: jumpLeft 1.5s linear;
+}
+
+#cup1.downRedRight {
+  animation: downRedRight 1.5s linear;
+}
+
+#cup1.downRedLeft {
+  animation: downRedLeft 1.5s linear;
+}
+
+#cup1.dashRightRed {
+  animation: dashRightRed 0.2s linear;
+}
+
+#cup1.dashLeftRed {
+  animation: dashLeftRed 0.2s linear;
+}
+
+/* Blue anim ClassNames */
+#cup2.waitRightBlue {
+  animation: cuphead2_right 0.5s infinite linear;
+}
+
+#cup2.waitLeftBlue {
+  animation: cuphead2_left 0.5s infinite linear;
+}
+
+#cup2.walkingRightBlue {
+  animation: walkingRightBlue 1s infinite linear;
+}
+
+#cup2.walkingLeftBlue {
+  animation: walkingLeftBlue 1s infinite linear;
+}
+
+#cup2.jumpingRightBlue {
+  animation: jumpRightBlue 1s linear;
+}
+
+#cup2.jumpingLeftBlue {
+  animation: jumpLeftBlue 1s linear;
+}
+
+#cup2.downRightBlue {
+  animation: downRightBlue 1.5s linear;
+}
+
+#cup2.downLeftBlue {
+  animation: downLeftBlue 1.5s linear;
+}
+
+#cup2.dashRightBlue {
+  animation: dashRightBlue 0.2s linear;
+}
+
+#cup2.dashLeftBlue {
+  animation: dashLeftBlue 0.2s linear;
+}
+
+/* red anim */
+
+@keyframes cuphead1_right {
+  0% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+  }
+
+  6% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+  }
+
+  12% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+  }
+
+  18% {
+    background: url(../CupHeadApp/animation/waiting/02.png) no-repeat;
+    background-size: 100%;
+  }
+
+  24% {
+    background: url(../CupHeadApp/animation/waiting/02.png) no-repeat;
+    background-size: 100%;
+  }
+
+  30% {
+    background: url(../CupHeadApp/animation/waiting/03.png) no-repeat;
+    background-size: 100%;
+  }
+
+  35% {
+    background: url(../CupHeadApp/animation/waiting/04.png) no-repeat;
+    background-size: 100%;
+  }
+
+  41% {
+    background: url(../CupHeadApp/animation/waiting/05.png) no-repeat;
+    background-size: 100%;
+  }
+
+  47% {
+    background: url(../CupHeadApp/animation/waiting/05.png) no-repeat;
+    background-size: 100%;
+  }
+
+  53% {
+    background: url(../CupHeadApp/animation/waiting/05.png) no-repeat;
+    background-size: 100%;
+  }
+
+  59% {
+    background: url(../CupHeadApp/animation/waiting/05.png) no-repeat;
+    background-size: 100%;
+  }
+
+  65% {
+    background: url(../CupHeadApp/animation/waiting/04.png) no-repeat;
+    background-size: 100%;
+  }
+
+  71% {
+    background: url(../CupHeadApp/animation/waiting/03.png) no-repeat;
+    background-size: 100%;
+  }
+
+  77% {
+    background: url(../CupHeadApp/animation/waiting/02.png) no-repeat;
+    background-size: 100%;
+  }
+
+  82% {
+    background: url(../CupHeadApp/animation/waiting/02.png) no-repeat;
+    background-size: 100%;
+  }
+
+  88% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+  }
+
+  94% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+@keyframes cuphead1_left {
+  0% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  6% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  12% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  18% {
+    background: url(../CupHeadApp/animation/waiting/02.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  24% {
+    background: url(../CupHeadApp/animation/waiting/02.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  30% {
+    background: url(../CupHeadApp/animation/waiting/03.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  35% {
+    background: url(../CupHeadApp/animation/waiting/04.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  41% {
+    background: url(../CupHeadApp/animation/waiting/05.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  47% {
+    background: url(../CupHeadApp/animation/waiting/05.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  53% {
+    background: url(../CupHeadApp/animation/waiting/05.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  59% {
+    background: url(../CupHeadApp/animation/waiting/05.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  65% {
+    background: url(../CupHeadApp/animation/waiting/04.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  71% {
+    background: url(../CupHeadApp/animation/waiting/03.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  77% {
+    background: url(../CupHeadApp/animation/waiting/02.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  82% {
+    background: url(../CupHeadApp/animation/waiting/02.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  88% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  94% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/waiting/01.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+}
+
+@keyframes walkingRight {
+  0% {
+    background: url(../CupHeadApp/animation/walcking/1.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  6% {
+    background: url(../CupHeadApp/animation/walcking/2.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  13% {
+    background: url(../CupHeadApp/animation/walcking/3.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  19% {
+    background: url(../CupHeadApp/animation/walcking/4.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  26% {
+    background: url(../CupHeadApp/animation/walcking/5.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  32% {
+    background: url(../CupHeadApp/animation/walcking/6.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  38% {
+    background: url(../CupHeadApp/animation/walcking/7.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  47% {
+    background: url(../CupHeadApp/animation/walcking/8.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  50% {
+    background: url(../CupHeadApp/animation/walcking/9.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  58% {
+    background: url(../CupHeadApp/animation/walcking/10.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  65% {
+    background: url(../CupHeadApp/animation/walcking/11.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  71% {
+    background: url(../CupHeadApp/animation/walcking/12.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  77% {
+    background: url(../CupHeadApp/animation/walcking/13.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  83% {
+    background: url(../CupHeadApp/animation/walcking/14.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  94% {
+    background: url(../CupHeadApp/animation/walcking/15.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/walcking/16.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+  }
+}
+
+@keyframes walkingLeft {
+  0% {
+    background: url(../CupHeadApp/animation/walcking/1.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  6% {
+    background: url(../CupHeadApp/animation/walcking/2.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  13% {
+    background: url(../CupHeadApp/animation/walcking/3.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  19% {
+    background: url(../CupHeadApp/animation/walcking/4.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  26% {
+    background: url(../CupHeadApp/animation/walcking/5.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  32% {
+    background: url(../CupHeadApp/animation/walcking/6.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  38% {
+    background: url(../CupHeadApp/animation/walcking/7.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  47% {
+    background: url(../CupHeadApp/animation/walcking/8.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  50% {
+    background: url(../CupHeadApp/animation/walcking/9.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  58% {
+    background: url(../CupHeadApp/animation/walcking/10.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  65% {
+    background: url(../CupHeadApp/animation/walcking/11.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  71% {
+    background: url(../CupHeadApp/animation/walcking/12.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  77% {
+    background: url(../CupHeadApp/animation/walcking/13.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  83% {
+    background: url(../CupHeadApp/animation/walcking/14.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  94% {
+    background: url(../CupHeadApp/animation/walcking/15.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/walcking/16.png) no-repeat;
+    background-position: -30px 0px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+}
+
+@keyframes jumpRight {
+  0% {
+    background: url(../CupHeadApp/animation/jump/1.png) no-repeat;
+    background-size: 100%;
+    top: 440px;
+  }
+
+  8.3% {
+    background: url(../CupHeadApp/animation/jump/2.png) no-repeat;
+
+    background-size: 100%;
+  }
+
+  16.6% {
+    background: url(../CupHeadApp/animation/jump/3.png) no-repeat;
+
+    background-size: 100%;
+  }
+
+  24.9% {
+    background: url(../CupHeadApp/animation/jump/4.png) no-repeat;
+
+    background-size: 100%;
+  }
+
+  33.2% {
+    background: url(../CupHeadApp/animation/jump/5.png) no-repeat;
+
+    background-size: 100%;
+  }
+
+  41.5% {
+    background: url(../CupHeadApp/animation/jump/6.png) no-repeat;
+
+    background-size: 100%;
+  }
+
+  49.8% {
+    background: url(../CupHeadApp/animation/jump/7.png) no-repeat;
+    top: 100px;
+    background-size: 100%;
+  }
+
+  58.1% {
+    background: url(../CupHeadApp/animation/jump/1.png) no-repeat;
+    background-size: 100%;
+  }
+
+  70.4% {
+    background: url(../CupHeadApp/animation/jump/8.png) no-repeat;
+    background-size: 100%;
+  }
+
+  74.7% {
+    background: url(../CupHeadApp/animation/jump/8.png) no-repeat;
+    background-size: 100%;
+  }
+
+  79% {
+    background: url(../CupHeadApp/animation/jump/9.png) no-repeat;
+    background-size: 100%;
+  }
+
+  90% {
+    background: url(../CupHeadApp/animation/jump/9.png) no-repeat;
+    top: 440px;
+    background-size: 100%;
+  }
+}
+
+@keyframes jumpLeft {
+  0% {
+    background: url(../CupHeadApp/animation/jump/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+
+    top: 440px;
+  }
+
+  8.3% {
+    background: url(../CupHeadApp/animation/jump/2.png) no-repeat;
+
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  16.6% {
+    background: url(../CupHeadApp/animation/jump/3.png) no-repeat;
+
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  24.9% {
+    background: url(../CupHeadApp/animation/jump/4.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  33.2% {
+    background: url(../CupHeadApp/animation/jump/5.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  41.5% {
+    background: url(../CupHeadApp/animation/jump/6.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  49.8% {
+    background: url(../CupHeadApp/animation/jump/7.png) no-repeat;
+    top: 100px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  58.1% {
+    background: url(../CupHeadApp/animation/jump/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  70.4% {
+    background: url(../CupHeadApp/animation/jump/8.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  74.7% {
+    background: url(../CupHeadApp/animation/jump/8.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  79% {
+    background: url(../CupHeadApp/animation/jump/9.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  90% {
+    background: url(../CupHeadApp/animation/jump/9.png) no-repeat;
+    top: 440px;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+}
+
+@keyframes downRedRight {
+  0% {
+    background: url(../CupHeadApp/animation/downRed/1.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  4.5% {
+    background: url(../CupHeadApp/animation/downRed/2.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  9% {
+    background: url(../CupHeadApp/animation/downRed/3.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  13.5% {
+    background: url(../CupHeadApp/animation/downRed/4.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  18% {
+    background: url(../CupHeadApp/animation/downRed/4.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  22.5% {
+    background: url(../CupHeadApp/animation/downRed/5.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  27% {
+    background: url(../CupHeadApp/animation/downRed/6.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  31.5% {
+    background: url(../CupHeadApp/animation/downRed/7.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  36% {
+    background: url(../CupHeadApp/animation/downRed/7.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  40.5% {
+    background: url(../CupHeadApp/animation/downRed/8.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  45% {
+    background: url(../CupHeadApp/animation/downRed/9.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  49.5% {
+    background: url(../CupHeadApp/animation/downRed/10.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  54% {
+    background: url(../CupHeadApp/animation/downRed/9.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  58.5% {
+    background: url(../CupHeadApp/animation/downRed/8.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  63% {
+    background: url(../CupHeadApp/animation/downRed/7.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  67.5% {
+    background: url(../CupHeadApp/animation/downRed/7.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  72% {
+    background: url(../CupHeadApp/animation/downRed/6.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  76.5% {
+    background: url(../CupHeadApp/animation/downRed/5.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  81% {
+    background: url(../CupHeadApp/animation/downRed/4.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  85.5% {
+    background: url(../CupHeadApp/animation/downRed/4.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  90% {
+    background: url(../CupHeadApp/animation/downRed/3.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  95% {
+    background: url(../CupHeadApp/animation/downRed/2.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/downRed/1.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+}
+
+@keyframes downRedLeft {
+  0% {
+    background: url(../CupHeadApp/animation/downRed/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  4.5% {
+    background: url(../CupHeadApp/animation/downRed/2.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  9% {
+    background: url(../CupHeadApp/animation/downRed/3.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  13.5% {
+    background: url(../CupHeadApp/animation/downRed/4.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  18% {
+    background: url(../CupHeadApp/animation/downRed/4.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  22.5% {
+    background: url(../CupHeadApp/animation/downRed/5.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  27% {
+    background: url(../CupHeadApp/animation/downRed/6.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  31.5% {
+    background: url(../CupHeadApp/animation/downRed/7.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  36% {
+    background: url(../CupHeadApp/animation/downRed/7.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  40.5% {
+    background: url(../CupHeadApp/animation/downRed/8.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  45% {
+    background: url(../CupHeadApp/animation/downRed/9.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  49.5% {
+    background: url(../CupHeadApp/animation/downRed/10.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  54% {
+    background: url(../CupHeadApp/animation/downRed/9.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  58.5% {
+    background: url(../CupHeadApp/animation/downRed/8.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  63% {
+    background: url(../CupHeadApp/animation/downRed/7.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  67.5% {
+    background: url(../CupHeadApp/animation/downRed/7.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  72% {
+    background: url(../CupHeadApp/animation/downRed/6.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  76.5% {
+    background: url(../CupHeadApp/animation/downRed/5.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  81% {
+    background: url(../CupHeadApp/animation/downRed/4.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  85.5% {
+    background: url(../CupHeadApp/animation/downRed/4.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  90% {
+    background: url(../CupHeadApp/animation/downRed/3.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  95% {
+    background: url(../CupHeadApp/animation/downRed/2.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/downRed/1.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+    transform: rotateY(180deg) scale(1.5);
+  }
+}
+
+@keyframes dashRightRed {
+  0% {
+    background: url(../CupHeadApp/animation/DashRed/1.png) no-repeat;
+    background-size: 100%;
+  }
+
+  12.5% {
+    background: url(../CupHeadApp/animation/DashRed/1.png) no-repeat;
+    background-size: 100%;
+  }
+
+  25% {
+    background: url(../CupHeadApp/animation/DashRed/2.png) no-repeat;
+    background-size: 100%;
+  }
+
+  37.5% {
+    background: url(../CupHeadApp/animation/DashRed/3.png) no-repeat;
+    background-size: 100%;
+  }
+
+  50% {
+    background: url(../CupHeadApp/animation/DashRed/3.png) no-repeat;
+    background-size: 100%;
+  }
+
+  62.5% {
+    background: url(../CupHeadApp/animation/DashRed/4.png) no-repeat;
+    background-size: 100%;
+  }
+
+  75% {
+    background: url(../CupHeadApp/animation/DashRed/5.png) no-repeat;
+    background-size: 100%;
+  }
+
+  87.5% {
+    background: url(../CupHeadApp/animation/DashRed/6.png) no-repeat;
+    background-size: 100%;
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/DashRed/6.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+@keyframes dashLeftRed {
+  0% {
+    background: url(../CupHeadApp/animation/DashRed/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  12.5% {
+    background: url(../CupHeadApp/animation/DashRed/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  25% {
+    background: url(../CupHeadApp/animation/DashRed/2.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  37.5% {
+    background: url(../CupHeadApp/animation/DashRed/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  50% {
+    background: url(../CupHeadApp/animation/DashRed/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  62.5% {
+    background: url(../CupHeadApp/animation/DashRed/4.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  75% {
+    background: url(../CupHeadApp/animation/DashRed/5.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  87.5% {
+    background: url(../CupHeadApp/animation/DashRed/6.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/DashRed/6.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+}
+
+/* blue anim */
+
+@keyframes cuphead2_right {
+  0% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+  }
+
+  8% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+  }
+
+  16% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+  }
+
+  25% {
+    background: url(../CupHeadApp/animation/waiting1/2.png) no-repeat;
+    background-size: 100%;
+  }
+
+  33% {
+    background: url(../CupHeadApp/animation/waiting1/2.png) no-repeat;
+    background-size: 100%;
+  }
+
+  41% {
+    background: url(../CupHeadApp/animation/waiting1/3.png) no-repeat;
+    background-size: 100%;
+  }
+
+  50% {
+    background: url(../CupHeadApp/animation/waiting1/3.png) no-repeat;
+    background-size: 100%;
+  }
+
+  58% {
+    background: url(../CupHeadApp/animation/waiting1/3.png) no-repeat;
+    background-size: 100%;
+  }
+
+  66% {
+    background: url(../CupHeadApp/animation/waiting1/3.png) no-repeat;
+    background-size: 100%;
+  }
+
+  75% {
+    background: url(../CupHeadApp/animation/waiting1/2.png) no-repeat;
+    background-size: 100%;
+  }
+
+  83% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+  }
+
+  91% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+@keyframes cuphead2_left {
+  0% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  8% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  16% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  25% {
+    background: url(../CupHeadApp/animation/waiting1/2.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  33% {
+    background: url(../CupHeadApp/animation/waiting1/2.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  41% {
+    background: url(../CupHeadApp/animation/waiting1/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  50% {
+    background: url(../CupHeadApp/animation/waiting1/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  58% {
+    background: url(../CupHeadApp/animation/waiting1/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  66% {
+    background: url(../CupHeadApp/animation/waiting1/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  75% {
+    background: url(../CupHeadApp/animation/waiting1/2.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  83% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  91% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/waiting1/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+}
+
+@keyframes walkingRightBlue {
+  0% {
+    background: url(../CupHeadApp/animation/walking1/1.png) no-repeat;
+    background-size: 100%;
+  }
+
+  8% {
+    background: url(../CupHeadApp/animation/walking1/2.png) no-repeat;
+    background-size: 100%;
+  }
+
+  16% {
+    background: url(../CupHeadApp/animation/walking1/3.png) no-repeat;
+    background-size: 100%;
+  }
+
+  25% {
+    background: url(../CupHeadApp/animation/walking1/4.png) no-repeat;
+    background-size: 100%;
+  }
+
+  33% {
+    background: url(../CupHeadApp/animation/walking1/5.png) no-repeat;
+    background-size: 100%;
+  }
+
+  41% {
+    background: url(../CupHeadApp/animation/walking1/6.png) no-repeat;
+    background-size: 100%;
+  }
+
+  50% {
+    background: url(../CupHeadApp/animation/walking1/7.png) no-repeat;
+    background-size: 100%;
+  }
+
+  58% {
+    background: url(../CupHeadApp/animation/walking1/8.png) no-repeat;
+    background-size: 100%;
+  }
+
+  66% {
+    background: url(../CupHeadApp/animation/walking1/9.png) no-repeat;
+    background-size: 100%;
+  }
+
+  75% {
+    background: url(../CupHeadApp/animation/walking1/10.png) no-repeat;
+    background-size: 100%;
+  }
+
+  83% {
+    background: url(../CupHeadApp/animation/walking1/11.png) no-repeat;
+    background-size: 100%;
+  }
+
+  91% {
+    background: url(../CupHeadApp/animation/walking1/12.png) no-repeat;
+    background-size: 100%;
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/walking1/13.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+@keyframes walkingLeftBlue {
+  0% {
+    background: url(../CupHeadApp/animation/walking1/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  8% {
+    background: url(../CupHeadApp/animation/walking1/2.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  16% {
+    background: url(../CupHeadApp/animation/walking1/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  25% {
+    background: url(../CupHeadApp/animation/walking1/4.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  33% {
+    background: url(../CupHeadApp/animation/walking1/5.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  41% {
+    background: url(../CupHeadApp/animation/walking1/6.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  50% {
+    background: url(../CupHeadApp/animation/walking1/7.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  58% {
+    background: url(../CupHeadApp/animation/walking1/8.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  66% {
+    background: url(../CupHeadApp/animation/walking1/9.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  75% {
+    background: url(../CupHeadApp/animation/walking1/10.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  83% {
+    background: url(../CupHeadApp/animation/walking1/11.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  91% {
+    background: url(../CupHeadApp/animation/walking1/12.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/walking1/13.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+}
+
+@keyframes jumpRightBlue {
+  0% {
+    background: url(../CupHeadApp/animation/jump1/1.png) no-repeat;
+    background-size: 100%;
+    top: 440px;
+  }
+
+  11% {
+    background: url(../CupHeadApp/animation/jump1/2.png) no-repeat;
+    background-size: 100%;
+  }
+
+  22% {
+    background: url(../CupHeadApp/animation/jump1/3.png) no-repeat;
+    background-size: 100%;
+  }
+
+  33% {
+    background: url(../CupHeadApp/animation/jump1/4.png) no-repeat;
+    background-size: 100%;
+  }
+
+  44% {
+    background: url(../CupHeadApp/animation/jump1/5.png) no-repeat;
+    background-size: 100%;
+  }
+
+  55% {
+    background: url(../CupHeadApp/animation/jump1/6.png) no-repeat;
+    background-size: 100%;
+    top: 100px;
+  }
+
+  66% {
+    background: url(../CupHeadApp/animation/jump1/7.png) no-repeat;
+    background-size: 100%;
+  }
+
+  77% {
+    background: url(../CupHeadApp/animation/jump1/8.png) no-repeat;
+    background-size: 100%;
+  }
+
+  88% {
+    background: url(../CupHeadApp/animation/jump1/9.png) no-repeat;
+    background-size: 100%;
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/jump1/10.png) no-repeat;
+    background-size: 100%;
+    top: 440px;
+  }
+}
+
+@keyframes jumpLeftBlue {
+  0% {
+    background: url(../CupHeadApp/animation/jump1/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    top: 440px;
+  }
+
+  11% {
+    background: url(../CupHeadApp/animation/jump1/2.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  22% {
+    background: url(../CupHeadApp/animation/jump1/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  33% {
+    background: url(../CupHeadApp/animation/jump1/4.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  44% {
+    background: url(../CupHeadApp/animation/jump1/5.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  55% {
+    background: url(../CupHeadApp/animation/jump1/6.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    top: 100px;
+  }
+
+  66% {
+    background: url(../CupHeadApp/animation/jump1/7.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  77% {
+    background: url(../CupHeadApp/animation/jump1/8.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  88% {
+    background: url(../CupHeadApp/animation/jump1/9.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/jump1/10.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    top: 440px;
+  }
+}
+
+@keyframes downRightBlue {
+  0% {
+    background: url(../CupHeadApp/animation/downBlue/1.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  7% {
+    background: url(../CupHeadApp/animation/downBlue/2.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  14% {
+    background: url(../CupHeadApp/animation/downBlue/3.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  21% {
+    background: url(../CupHeadApp/animation/downBlue/4.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  28% {
+    background: url(../CupHeadApp/animation/downBlue/5.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  35% {
+    background: url(../CupHeadApp/animation/downBlue/6.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  42% {
+    background: url(../CupHeadApp/animation/downBlue/7.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  49% {
+    background: url(../CupHeadApp/animation/downBlue/8.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  56% {
+    background: url(../CupHeadApp/animation/downBlue/7.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  63% {
+    background: url(../CupHeadApp/animation/downBlue/6.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  70% {
+    background: url(../CupHeadApp/animation/downBlue/5.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  77% {
+    background: url(../CupHeadApp/animation/downBlue/4.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  84% {
+    background: url(../CupHeadApp/animation/downBlue/3.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  91% {
+    background: url(../CupHeadApp/animation/downBlue/2.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/downBlue/1.png) no-repeat;
+    background-size: 100%;
+    background-position-x: -40px;
+  }
+}
+
+@keyframes downLeftBlue {
+  a 0% {
+    background: url(../CupHeadApp/animation/downBlue/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  7% {
+    background: url(../CupHeadApp/animation/downBlue/2.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  14% {
+    background: url(../CupHeadApp/animation/downBlue/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  21% {
+    background: url(../CupHeadApp/animation/downBlue/4.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  28% {
+    background: url(../CupHeadApp/animation/downBlue/5.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  35% {
+    background: url(../CupHeadApp/animation/downBlue/6.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  42% {
+    background: url(../CupHeadApp/animation/downBlue/7.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  49% {
+    background: url(../CupHeadApp/animation/downBlue/8.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  56% {
+    background: url(../CupHeadApp/animation/downBlue/7.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  63% {
+    background: url(../CupHeadApp/animation/downBlue/6.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  70% {
+    background: url(../CupHeadApp/animation/downBlue/5.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  77% {
+    background: url(../CupHeadApp/animation/downBlue/4.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  84% {
+    background: url(../CupHeadApp/animation/downBlue/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  91% {
+    background: url(../CupHeadApp/animation/downBlue/2.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/downBlue/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+    background-position-x: -40px;
+  }
+}
+
+@keyframes dashRightBlue {
+  0% {
+    background: url(../CupHeadApp/animation/DashBlue/1.png) no-repeat;
+    background-size: 100%;
+  }
+
+  14% {
+    background: url(../CupHeadApp/animation/DashBlue/2.png) no-repeat;
+    background-size: 100%;
+  }
+
+  28.5% {
+    background: url(../CupHeadApp/animation/DashBlue/3.png) no-repeat;
+    background-size: 100%;
+  }
+
+  42.8% {
+    background: url(../CupHeadApp/animation/DashBlue/4.png) no-repeat;
+    background-size: 100%;
+  }
+
+  57% {
+    background: url(../CupHeadApp/animation/DashBlue/4.png) no-repeat;
+    background-size: 100%;
+  }
+
+  71.5% {
+    background: url(../CupHeadApp/animation/DashBlue/5.png) no-repeat;
+    background-size: 100%;
+  }
+
+  85.7% {
+    background: url(../CupHeadApp/animation/DashBlue/6.png) no-repeat;
+    background-size: 100%;
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/DashBlue/6.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+@keyframes dashLeftBlue {
+  0% {
+    background: url(../CupHeadApp/animation/DashBlue/1.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  14% {
+    background: url(../CupHeadApp/animation/DashBlue/2.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  28.5% {
+    background: url(../CupHeadApp/animation/DashBlue/3.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  42.8% {
+    background: url(../CupHeadApp/animation/DashBlue/4.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  57% {
+    background: url(../CupHeadApp/animation/DashBlue/4.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  71.5% {
+    background: url(../CupHeadApp/animation/DashBlue/5.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  85.7% {
+    background: url(../CupHeadApp/animation/DashBlue/6.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+
+  100% {
+    background: url(../CupHeadApp/animation/DashBlue/6.png) no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg) scale(1.5);
+  }
+}
+
+#Exit_2:hover {
+  opacity: 1;
+}
+
+#Exit_2 {
+  transition: 0.5s;
+  position: absolute;
+  z-index: 900;
+  /* top: 10px; */
+  right: 25px;
+  top: 15px;
+  border-radius: 5px;
+
+  z-index: 900;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+
+  opacity: 0.7;
+
+  background-color: red;
+
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+#tutorialDone {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  position: absolute;
+  top: 0;
+  z-index: 900;
+}
+
+#tutorialDone > p:nth-child(1) {
+  font-size: 34px;
+
+  color: white;
+  position: absolute;
+  top: 140px;
+  left: 650px;
+
+  /* box-shadow: 0px 0px 100px 10px red; */
+  /* text-shadow: 0px 0px 10px red; */
+  animation: Welldone 1s infinite linear;
+}
+
+#tutorialDone > p:nth-child(2) {
+  font-size: 28px;
+
+  color: white;
+  position: absolute;
+  top: 200px;
+  left: 500px;
+}
+
+#tutorialDone > p:nth-child(3) {
+  font-size: 26px;
+
+  color: white;
+  position: absolute;
+  top: 240px;
+  left: 530px;
+}
+
+@keyframes Welldone {
+  0% {
+    scale: 1;
+    text-shadow: 0px 0px 10px yellow;
+  }
+
+  50% {
+    scale: 1.1;
+    text-shadow: 0px 0px 30px yellow;
+  }
+
+  100% {
+    scale: 1;
+    text-shadow: 0px 0px 10px yellow;
+  }
+}
+
+#tutorialDone > div {
+  transform: 1s;
+
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 350px;
+  left: 700px;
+  background-color: yellow;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  animation: Welldone 1.5s linear infinite;
+
+  cursor: pointer;
+}

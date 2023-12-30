@@ -1,0 +1,68 @@
+/* #game > #gameMenu > video {
+  position: absolute;
+  z-index: 500;
+} */
+#game > #gameMenu > #MenuBackground {
+  position: absolute;
+  top: 0px;
+  /* z-index: 900; */
+}
+
+/* #game > #gameMenu > .cover {
+  position: absolute;
+  z-index: 900;
+  top: 0;
+  left: 119px;
+  width: 30px;
+  height: 30px;
+
+  background: url(../CupHeadApp/cuphead_img/menu/BackMenu.png);
+
+  display: none;
+} */
+
+#game > #gameMenu > .menucover {
+  position: absolute;
+  z-index: 900;
+  top: 220px;
+  left: 690px;
+  width: 170px;
+  height: 130px;
+
+  mix-blend-mode: unset;
+  border-radius: 50px;
+  box-shadow: 0 0 100px 10px black;
+
+  background: url(../CupHeadApp/cuphead_img/menu/BackMenu.png);
+
+  display: none;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+#game > #gameMenu > .menucover > .items:hover {
+  cursor: pointer;
+}
+#game > #gameMenu > .menucover > .items {
+  width: 150px;
+  height: 30px;
+  /* border: 1px solid red; */
+}
+
+#game > #gameMenu > .menucover > .items:nth-child(1) {
+  width: 120px;
+  background: url(../CupHeadApp/cuphead_img/menu/DiselectedStart.png) no-repeat;
+  background-size: 100% 100%;
+}
+#game > #gameMenu > .menucover > .items:nth-child(2) {
+  transform: translateX(-15px);
+  background: url(../CupHeadApp/cuphead_img/menu/DiselectedOptions.png)
+    no-repeat;
+  background-size: 100% 100%;
+}
+#game > #gameMenu > .menucover > .items:nth-child(3) {
+  width: 110px;
+  height: 25px;
+  transform: translateX(5px);
+  background: url(../CupHeadApp/cuphead_img/menu/DiselectedExit.png) no-repeat;
+  background-size: 100% 100%;
+}

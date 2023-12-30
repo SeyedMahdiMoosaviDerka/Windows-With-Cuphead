@@ -1,0 +1,80 @@
+#AudioBottomClicked {
+  cursor: default;
+  width: 500px;
+  height: 500px;
+  background: url(../img/Audiomenu.png) no-repeat 100%;
+  background-size: auto;
+  background-size: 100%;
+  margin: 50px auto;
+
+  position: relative;
+}
+
+#AudioBottomClicked > .items:hover {
+  color: red;
+}
+
+#AudioBottomClicked > .items {
+  cursor: pointer;
+  width: 110px;
+  height: 35px;
+  background: url(../img/Annotation\ 2023-10-08\ 104140.png);
+  border-radius: 20%;
+  box-shadow: 40px -10px 90px 1px #fff;
+  text-align: center;
+  font-size: 45px;
+  color: #535353;
+  transition: 0.2s;
+}
+
+#AudioBottomClicked > #menu_option_redio_1 {
+  line-height: 30px;
+  position: absolute;
+  top: 60px;
+  left: 320px;
+}
+#AudioBottomClicked > #menu_option_redio_2 {
+  line-height: 17px;
+  position: absolute;
+  top: 103px;
+  left: 320px;
+}
+
+#AudioBottomClicked > #menu_option_redio_3 {
+  line-height: 20px;
+  position: absolute;
+  top: 135px;
+  left: 320px;
+}
+
+#AudioBottomClicked > #menu_option_redio_1:hover > #volume_border_1,
+#AudioBottomClicked > #menu_option_redio_2:hover > #volume_border_2,
+#AudioBottomClicked > #menu_option_redio_3:hover > #volume_border_3 {
+  border: 3px solid red;
+}
+
+#AudioBottomClicked > #menu_option_redio_1 > #volume_border_1,
+#AudioBottomClicked > #menu_option_redio_2 > #volume_border_2,
+#AudioBottomClicked > #menu_option_redio_3 > #volume_border_3 {
+  border: 3px solid #535353;
+  border-radius: 10px;
+  height: 20px;
+}
+
+#AudioBottomClicked > #menu_option_redio_1 > #volume_border_1 {
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+
+#AudioBottomClicked > #menu_option_redio_2 > #volume_border_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#AudioBottomClicked > #menu_option_redio_3 > #volume_border_3 {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}

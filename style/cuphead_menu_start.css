@@ -1,0 +1,26 @@
+#game > #gameMenu > #cover_menu > #StartBottomClicked {
+  width: 500px;
+  height: 500px;
+
+  position: absolute;
+  top: -110px;
+  left: -170px;
+
+  display: none;
+  flex-flow: column wrap;
+  gap: 18px;
+
+  /*   border: 1px solid red; */
+  background: url(../CupHeadApp/cuphead_img/Menu_Start/New_1.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+#game > #gameMenu > #cover_menu > #StartBottomClicked > .items {
+  width: 470px;
+  height: 120px;
+
+  transform: translateX(10px) translateY(20px);
+
+  /*   border: 1px solid red; */
+  cursor: pointer;
+}

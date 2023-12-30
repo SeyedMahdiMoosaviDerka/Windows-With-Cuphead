@@ -1,0 +1,82 @@
+#VisualBottomClicked {
+  width: 500px;
+  height: 500px;
+  /* background: url(../img/VisualMenu.png) no-repeat 100%; */
+  background-size: auto;
+  background-size: 100%;
+  margin: 50px auto;
+
+  position: relative;
+  cursor: default;
+}
+
+#VisualBottomClicked > .items:hover {
+  cursor: pointer;
+  color: red;
+}
+
+#VisualBottomClicked > .items {
+  width: 110px;
+  height: 35px;
+  background: url(../img/Annotation\ 2023-10-08\ 104140.png);
+  border-radius: 20%;
+  box-shadow: 40px -10px 90px 1px #fff;
+  text-align: center;
+  font-size: 45px;
+  color: #535353;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#VisualBottomClicked > #menu_option_redio_1 {
+  line-height: 30px;
+  position: absolute;
+  top: 172px;
+  left: 265px;
+}
+
+#VisualBottomClicked > #menu_option_redio_2 {
+  line-height: 30px;
+  position: absolute;
+  top: 210px;
+  left: 265px;
+}
+
+#VisualBottomClicked > #menu_option_redio_3 {
+  line-height: 30px;
+  position: absolute;
+  top: 245px;
+  left: 265px;
+}
+
+#VisualBottomClicked > #menu_option_redio_1:hover > #volume_border_1,
+#VisualBottomClicked > #menu_option_redio_2:hover > #volume_border_2,
+#VisualBottomClicked > #menu_option_redio_3:hover > #volume_border_3 {
+  border: 3px solid red;
+}
+
+#VisualBottomClicked > #menu_option_redio_1 > #volume_border_1,
+#VisualBottomClicked > #menu_option_redio_2 > #volume_border_2,
+#VisualBottomClicked > #menu_option_redio_3 > #volume_border_3 {
+  border: 3px solid #535353;
+  border-radius: 10px;
+  height: 20px;
+}
+
+#VisualBottomClicked > #menu_option_redio_1 > #volume_border_1 {
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+
+#VisualBottomClicked > #menu_option_redio_2 > #volume_border_2 {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+#VisualBottomClicked > #menu_option_redio_3 > #volume_border_3 {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
