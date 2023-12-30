@@ -14,6 +14,7 @@ document.addEventListener("keydown", () => {
 cupheadIcon.ondblclick = function () {
   vido_audioStart();
 };
+
 function vido_audioStart() {
   game.className = "show";
   StratVideo.style.display = "block";
@@ -78,16 +79,17 @@ PressBottomVideo.onclick = function () {
 
 /* Start */
 
-StartBottom.onmouseover = function () {
+/* StartBottom.onmouseover = function () {
   StartBottom.style.background =
     " url(../CupHeadApp/cuphead_img/menu/SelectedStart.png) no-repeat";
   StartBottom.style.backgroundSize = "100% 100%";
 };
+
 StartBottom.onmouseout = function () {
   StartBottom.style.background =
     " url(../CupHeadApp/cuphead_img/menu/DiselectedStart.png) no-repeat";
   StartBottom.style.backgroundSize = "100% 100%";
-};
+}; */
 
 var PositionOfGameMenu = 0;
 
@@ -154,7 +156,7 @@ save_3.onmouseover = function () {
 }; */
 
 /* Options */
-OptionsBottom.onmouseover = function () {
+/* OptionsBottom.onmouseover = function () {
   OptionsBottom.style.background =
     " url(../CupHeadApp/cuphead_img/menu/SelectedOptions.png) no-repeat";
   OptionsBottom.style.backgroundSize = "100% 100%";
@@ -163,7 +165,7 @@ OptionsBottom.onmouseout = function () {
   OptionsBottom.style.background =
     " url(../CupHeadApp/cuphead_img/menu/DiselectedOptions.png) no-repeat";
   OptionsBottom.style.backgroundSize = "100% 100%";
-};
+}; */
 /* pos0 */
 
 OptionsBottom.onclick = function () {
@@ -187,7 +189,7 @@ VisualBottom.onclick = function () {
 /* pos2 */
 
 /* Exit */
-ExitBottom.onmouseover = function () {
+/* ExitBottom.onmouseover = function () {
   ExitBottom.style.background =
     " url(../CupHeadApp/cuphead_img/menu/SelectedExit.png) no-repeat";
   ExitBottom.style.backgroundSize = "100% 100%";
@@ -196,7 +198,7 @@ ExitBottom.onmouseout = function () {
   ExitBottom.style.background =
     " url(../CupHeadApp/cuphead_img/menu/DiselectedExit.png) no-repeat";
   ExitBottom.style.backgroundSize = "100% 100%";
-};
+}; */
 ExitBottom.onclick = function () {
   location.reload();
 };

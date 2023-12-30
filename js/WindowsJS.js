@@ -45,7 +45,7 @@ wallpaper.oncontextmenu = function (e) {
     WindowsRightClick.style.left = e.pageX - 250 + "px";
   }
 
-  return false;
+  //return false;
 };
 document.onclick = function () {
   HideRightClick();
