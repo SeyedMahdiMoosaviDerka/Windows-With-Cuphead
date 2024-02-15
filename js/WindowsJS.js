@@ -7,8 +7,8 @@ function ShowRightClick() {
 }
 
 WindowsRightClick.oncontextmenu = function (e) {
-  return false;
-}
+  //return false;
+};
 
 wallpaper.oncontextmenu = function (e) {
   WindowsRightClick.style.left = e.pageX + "px";

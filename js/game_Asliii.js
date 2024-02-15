@@ -11,7 +11,7 @@ score.innerHTML = "SCORE : " + yourScore;
 /* Game Done! */
 
 function GameIsDone() {
-  if (cup2Position == 1310) {
+  if (cup2Position >= 1300) {
     /* totu.className = "hide_totu"; */
     tutorialDone.className = "showSelector";
     LetsGoTutorial.onclick = function () {
@@ -65,7 +65,7 @@ function GameMapIsDone() {
 
           Enter_game.style.display = "none";
           GameAsliii.style.background =
-            "url(../CupHeadApp/cuphead_img/OrginalGame/gameBack_okay.png) no-repeat";
+            "url(CupHeadApp/cuphead_img/OrginalGame/gameBack_okay.png) no-repeat";
           GameAsliii.style.backgroundSize = "100% 100%";
           cup1_game.style.top = "440px";
           cup2_game.style.top = "440px";
@@ -262,23 +262,29 @@ function Boom() {
 
   if (characterHealth == 3) {
     HP.style.background =
-      "url(../CupHeadApp/cuphead_img/OrginalGame/HP2.png) no-repeat";
+      "url(CupHeadApp/cuphead_img/OrginalGame/HP2.png) no-repeat";
     characterHealth = 2;
   } else if (characterHealth == 2) {
     HP.style.background =
-      "url(../CupHeadApp/cuphead_img/OrginalGame/HP1.png) no-repeat";
+      "url(CupHeadApp/cuphead_img/OrginalGame/HP1.png) no-repeat";
     characterHealth = 1;
   } else if (characterHealth == 1) {
     //alert("You'r lose !");
     /* location.reload(); */
+    Losing();
   }
+}
+
+function Losing() {
+  alert("You'r lose !");
 }
 
 numberEnemy = 0;
 
 function enemyWalking(enemyNumber) {
   // Returns a random integer from 0 to 1370:
-  let EnemyFlowerPosition = Math.floor(Math.random() * 1370);
+  //let EnemyFlowerPosition = Math.floor(Math.random() * 1370);
+  let EnemyFlowerPosition = Math.floor(Math.random() * 1700) + 1370;
 
   //create element
   enemyElements = document.createElement("div");
